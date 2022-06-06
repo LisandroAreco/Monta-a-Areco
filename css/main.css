@@ -214,19 +214,11 @@ height: auto;
 }
 
 .moverCard {
-  left: 13%;
+  /* left: 13%; */
   background-color: #27558B;
   color: rgb(235, 235, 235);
   margin-top: 10vh;
 }
-
-.moverBtn {
-display: flex;
-margin-left: 13%;
-margin-top: 3px;
-margin-bottom: 3px;
-}
-
 
 
 /* EMPIEZA TURISMO AVENTURA */
