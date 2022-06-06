@@ -24,7 +24,7 @@ src: url(../fonts/Hubballi-Regular.ttf);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Slab:wght@300&display=swap');
 
-.body__main {
+body {
   overflow-x: hidden ;
 }
 
@@ -154,6 +154,9 @@ padding: 0px;
 box-shadow: 0 0 10px #00000088;
 }
 
+.main__ascensos {
+  background-color: #27558B ;
+}
 .linea__titulo--ascensos {
     height:14vw;
     min-height: 150px;
@@ -213,11 +216,11 @@ height: auto;
   box-shadow: 0px 0px 5px #2a2a72;
 }
 
-.moverCard {
-  /* left: 13%; */
+.card_css {
   background-color: #27558B;
   color: rgb(235, 235, 235);
   margin-top: 10vh;
+  
 }
 
 
