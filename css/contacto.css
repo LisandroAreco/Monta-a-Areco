@@ -1,0 +1,145 @@
+.portada__contacto {
+  color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #11253C;
+}
+
+.body__contacto, .email {
+  background-color: #0A1827;
+}
+
+.titulo__contacto h1 {
+  font-size: 11vh;
+}
+
+.contenedor__grid--contacto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-row-gap: 80px;
+      grid-template-areas: "telefono whatsapp formulario" "email . formulario";
+  margin: 130px 0px 130px 0px;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-auto-flow: column;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: formulario;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.formulario .TextAreas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.formulario-contacto-nombre, .formulario-contacto-email, .formulario-contacto-mensaje {
+  width: 350px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.formulario-contacto-mensaje {
+  height: 300px;
+  border-radius: 4px;
+}
+
+.telefono, .email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: telefono;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.whatsapp {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: whatsapp;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+}
+
+.whatsapp img {
+  padding-left: 1vw;
+}
+
+/* EJERCICIOS SASSS II */
+.logo__mail {
+  height: 40px;
+}
+
+.logo__instagram {
+  height: 30px;
+}
+
+.logo__whatsapp {
+  height: 25px;
+}
+
+.logo__tel {
+  height: 20px;
+}
+
+.paleta-color {
+  background: #27558B;
+}
+
+.email {
+  -webkit-box-shadow: 0px 0px 12px #848a92;
+          box-shadow: 0px 0px 12px #848a92;
+}
+
+.footer__container {
+  border: 4px solid white;
+}
+/*# sourceMappingURL=contacto.css.map */

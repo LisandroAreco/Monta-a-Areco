@@ -1,0 +1,121 @@
+.portada__contacto {
+    color:rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    background-color:#11253C;
+    }
+    
+    
+    .body__contacto {
+      background-color: #0A1827;
+    }
+    
+    .titulo__contacto h1{
+      font-size: 11vh;
+      }
+    
+    .contenedor__grid--contacto {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-row-gap: 80px;
+    grid-template-areas:
+      "telefono whatsapp formulario"
+      "email . formulario";
+    margin: 130px 0px 130px 0px
+    }
+    
+    .formulario {  
+    display: flex;
+    grid-auto-flow: column;
+    grid-area: formulario;
+    align-items:center;
+    justify-content: start;
+    }
+    
+    .formulario .TextAreas { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    }
+    
+    .formulario-contacto-nombre, .formulario-contacto-email, .formulario-contacto-mensaje{
+    width: 350px;
+    height: 30px;
+    border-radius: 4px;
+    }
+    
+    .formulario-contacto-mensaje {
+    height: 300px;
+    border-radius: 4px;
+    }
+    
+    
+    .telefono { 
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    }
+    
+    
+    .whatsapp {
+    grid-area: whatsapp;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    }
+    
+      .whatsapp img {
+        padding-left: 1vw;
+      }
+    
+
+
+/* EJERCICIOS SASSS II */
+
+
+
+
+$iconos-redes:(
+    mail: 40px, 
+    instagram: 30px,
+    whatsapp:  25px,
+    tel:  20px
+);
+
+@each $nombre, $valor in $iconos-redes {
+    .logo__#{$nombre} {
+        height: $valor;
+    }    
+}
+
+$colores: (
+    medio: #27558B,
+    principal: #11253C,
+    claro: rgb(255, 255, 255),
+);
+
+.paleta-color {
+    background: map-get($colores, medio);
+}
+
+.email {
+    @extend .telefono;
+    @extend .body__contacto;
+    box-shadow: 0px 0px 12px #848a92;
+}
+
+@mixin bordes {
+    border: 4px solid white
+}
+
+.footer__container {
+    @include bordes;
+}
