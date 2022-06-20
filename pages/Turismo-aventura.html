@@ -20,8 +20,8 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container-fluid d-flex ">
-              <a class="navbar-brand" href="#"><img src="../media/logo.png" alt="" width="35" height="35" class="d-inline-block align-text-bottom">
-              <h3 class="d-inline ms-1">Crux</h3>
+              <a class="navbar-brand" href="#"><img src="../media/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-bottom">
+              <h4 class="d-inline ms-1">Crux</h4>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,13 +29,13 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item me-3">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item me-3">
                     <a class="nav-link" href="./ascensos.html">Ascensos</a>
                   </li>
                   <li class="nav-item me-3">
-                    <a class="nav-link" href="./Turismo-aventura.html">Turismo Aventura</a>
+                    <a class="nav-link active" href="./Turismo-aventura.html">Turismo Aventura</a>
                   </li>
                   <li class="nav-item me-3">
                     <a class="nav-link" href="./trekking.html">Trekking</a>
@@ -55,179 +55,176 @@
       </a>
     </div>
     <main>
-        <!-- imagen fondo y titulo ascensos -->
-        <div class="portada__turismoAventura">
-          <div class="titulo__turismoAventura">
-            <hr class="linea__titulo--turismoAventura">
-            <h1>Turismo <br> aventura</h1>
-          </div>
-        </div>
-        <!-- cards ascensos -->
-        <div class="contenedor__turismoAventura">
-          <h2 class="subtitulo__paginas">Explorá nuestras posibilidades</h2>
-          <hr class="hr__subtitulo">
+    <!-- imagen fondo y titulo Turismo Aventura -->
+    <div class="portada__turismoAventura">
+      <div class="titulo__turismoAventura">
+        <hr class="linea__titulo--turismoAventura">
+        <h1>Turismo <br> aventura</h1>
+      </div>
+    </div>
+    <!-- cards Turismo Aventura -->
+    <div class="contenedor__turismoAventura">
+      <h2 class="subtitulo__paginas">Explorá nuestras posibilidades</h2>
+      <div class="contenedor_hr">
+        <hr class="hr__subtitulo">
+      </div>
 
-          <div class="contenedor__ascensos">
-            <h2 class="subtitulo__paginas">Conocé nuestros destinos</h2>
-            <hr class="hr__subtitulo">
+        <div class="cards__paginas row">    
+          <!-- inicio card -->
+          <div class="card col-lg-5  mx-auto card_css" data-aos="flip-left">
+            <div class="card-body">
+              <h5 class="card-title">Bella Vista - Bariloche </h5>
+              <p class="card-text">El ascenso al Cerro Bella Vista es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
+            </div>
+            <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="..."> 
+              <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropt1">
+              Mas información
+            </button>
           </div>
-            <div class="cards__ascensos row">    
-              <!-- inicio card -->
-              <div class="card col-lg-5  mx-auto card_css" data-aos="flip-left">
-                <div class="card-body">
-                  <h5 class="card-title">Bella Vista - Bariloche </h5>
-                  <p class="card-text">El ascenso al Cerro Bella Vista es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
-                </div>
-                <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="..."> 
-                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropa4">
-                  Mas información
-                </button>
-              </div>
               
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabeal" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Bella Vista Bariloche</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      El ascenso al Cerro Bella Vista es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista. <br> <br>
-                      El ascenso al Cerro Bella Vista es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdropt1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabeal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Bella Vista Bariloche</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
-  
-              <!-- inicio card -->
-              <div class="card col-lg-5 mx-auto card_css" data-aos="flip-left">
-                <div class="card-body">
-                  <h5 class="card-title">Goye - Bariloche</h5>
-                  <p class="card-text">El ascenso al Cerro Goye es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
+                <div class="modal-body">
+                  El ascenso al Cerro Bella Vista es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista. <br> <br>
+                  El ascenso al Cerro Bella Vista es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.
                 </div>
-                <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="...">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropa4">
-                  Mas información
-                </button> 
-              </div>
-  
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Goye Bariloche</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <!-- inicio card -->
-              <div class="card col-lg-5  mx-auto card_css" data-aos="flip-left">
-                <div class="card-body">
-                  <h5 class="card-title">Volcán Lanin - Neuquen</h5>
-                  <p class="card-text">El ascenso al Volcán Lanin es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
-                </div>
-                <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="...">
-                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropa4">
-                  Mas información
-                </button> 
-              </div>
-  
-  
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdropa3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="card col-lg-5  mx-auto card_css" data-aos="flip-left">
-                <div class="card-body">
-                  <h5 class="card-title">Cerro Vallecitos - Mendoza</h5>
-                  <p class="card-text">El ascenso al Volcán Lanin es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
-                </div>
-                <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="..."> 
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropa4">
-                  Mas información
-                </button>
-              </div>
-  
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdropa4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="card col-lg-5 mx-auto card_css" data-aos="flip-left">
-                <div class="card-body">
-                  <h5 class="card-title">Cerro Plata - Mendoza</h5>
-                  <p class="card-text">El ascenso al cerro Plata es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
-                </div>
-                <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="..."> 
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropa4">
-                Mas información
-               </button>
-              </div>
-  
-  
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdropa5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Cerro Plata</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ppp
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
+  
+          <!-- inicio card -->
+          <div class="card col-lg-5 mx-auto card_css" data-aos="flip-left">
+            <div class="card-body">
+              <h5 class="card-title">Goye - Bariloche</h5>
+              <p class="card-text">El ascenso al Cerro Goye es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
+            </div>
+            <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="...">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropt2">
+              Mas información
+            </button> 
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdropt2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Goye Bariloche</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- inicio card -->
+          <div class="card col-lg-5  mx-auto card_css" data-aos="flip-left">
+            <div class="card-body">
+              <h5 class="card-title">Volcán Lanin - Neuquen</h5>
+              <p class="card-text">El ascenso al Volcán Lanin es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
+            </div>
+            <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="...">
+              <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropt3">
+              Mas información
+            </button> 
+          </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdropt3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-lg-5  mx-auto card_css" data-aos="flip-left">
+            <div class="card-body">
+              <h5 class="card-title">Cerro Vallecitos - Mendoza</h5>
+              <p class="card-text">El ascenso al Volcán Lanin es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
+            </div>
+            <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="..."> 
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropt4">
+              Mas información
+            </button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdropt4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-lg-5 mx-auto card_css" data-aos="flip-left">
+            <div class="card-body">
+              <h5 class="card-title">Cerro Plata - Mendoza</h5>
+              <p class="card-text">El ascenso al cerro Plata es un perfecto para aquellos que les gusta ganar altura rápidamente y no se intimidan con el desafío ganar muchos metros de altura rápidamente. El día de senderismo comienza en la picada al “Refugio Jakob”, también llamado sendero “El Tambo” aquí se comienza a subir lentamente la cresta sudeste de Bella Vista.</p>
+            </div>
+            <img src="../media/prueba_cards.jpg" class="card-img-bottom" alt="..."> 
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdropt5">
+            Mas información
+            </button>
+          </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdropt5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Cerro Plata</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ppp
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   
 
         

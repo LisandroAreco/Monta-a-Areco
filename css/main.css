@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 *   {
   margin: 0;
   padding: 0;
@@ -13,17 +16,6 @@ a{
 text-decoration: none;
 }
 
-@font-face {
-font-family: 'Fredoka', sans-serif;
-src: url(../fonts/Fredoka-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-font-family: 'Hubballi'; 
-src: url(../fonts/Hubballi-Regular.ttf);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Slab:wght@300&display=swap');
-
 main {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -32,9 +24,12 @@ main {
 .navbar {
 background-color: #11253C;
 box-shadow: 0px 0px 3px black;
-font-family: 'Roboto Condensed', sans-serif;
-font-size: large;
+font-family: 'Roboto Flex', sans-serif;
+font-size: 2,5vh;
+padding: 1px 0px;
 }
+
+
 /* wasap fixed */
   .wasap__fixed {
     position: fixed;
@@ -54,20 +49,17 @@ font-size: large;
 
   .wasap__fixed a .img__wasap {
     transition: all .7s;
-    width: 85px;
+    width: 70px;
   } 
   .wasap__fixed a .img__wasap:hover {
     transform: scale(1.1) rotate(360deg);
   }
 
-.imgcarousel {
-  filter: grayscale(25%);
-}
+
 
 .header__titulo {
 position: absolute;
 color:rgb(235, 235, 235);
-font-family: 'Roboto Condensed', sans-serif;
 top: 26vh;
 height: auto ;
 width: 100%;
@@ -83,6 +75,7 @@ z-index: 2;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 500; 
   text-align: center;
+  text-shadow: 1px 1px 7px black;
 }
 
 
@@ -104,9 +97,7 @@ display: flex;
 }
 
 .contenedor__flechita .flechita {
-border-radius: 10px;
 transition: transform .2s;
-
 }
 
 .contenedor__flechita .flechita:hover {
@@ -125,14 +116,13 @@ justify-content: center;
 } 
 
 
-#nosotros .nosotros__titulo {
+#nosotros .nosotros__flex .nosotros__titulo {
 font-size: 50px;
 font-family: 'Roboto Condensed', sans-serif;
-font-weight: 300;
 color: white;
-text-shadow: 0 0 2px rgba(5, 5, 5, 0.548);
-
+font-weight: 300;
 }
+
 
 #nosotros .nosotros__parrafo {
 text-align: center;
@@ -158,6 +148,14 @@ text-shadow: 0 0 1px rgba(5, 5, 5, 0.548);
 .cards__index {
   padding-top: 10vh;
 }
+.row .col-9 .card .card-body p {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.row .col-9 .card .card-body h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 0px 1px 25px black;
+}
 
 .card__zoom {
   transition: all 0.2s;
@@ -168,7 +166,7 @@ text-shadow: 0 0 1px rgba(5, 5, 5, 0.548);
 /* EMPIEZA ascensos */
 
 .portada__ascensos {
-background-image: radial-gradient(#0000004d, #0000002b), url(../media/nuevas2.jpg) ;
+background-image: url(../media/nuevas2oscuro1-min.jpg) ;
 position: relative;
 background-size: cover;
 background-repeat: no-repeat;
@@ -179,9 +177,12 @@ padding: 0px;
 box-shadow: 0 0 10px #00000088;
 }
 
-.main__ascensos {
+.cards__paginas {
   background-color: #27558B ;
+  padding: 5vh;
 }
+
+
 .linea__titulo--ascensos {
     height:14vw;
     min-height: 150px;
@@ -207,7 +208,8 @@ height: auto;
   font-size:calc(50px + 2vw); 
   color:rgb(255, 255, 255);
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 500; 
+  font-weight: 300; 
+  text-shadow: 1px 1px 7px black;
 }
 .contenedor__ascensos {
   background-color: #0A1827;
@@ -222,19 +224,21 @@ height: auto;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 500;
   margin-bottom: 8vh;
-  padding-top: 30vh;
+  padding-top: 20vh;
   font-size:calc(25px + 2vw); 
   color: white;
   text-align: center;
+}
+.contenedor_hr {
+  padding-bottom: 20vh ;
 }
 .hr__subtitulo {
   height: 4px;
   background-color: rgb(168, 40, 40);
   opacity: 1;
-  width: 4%;
+  width: 50px;
   justify-content: center;
   margin: auto;
-  margin-bottom: 20vh;
 }
 
 .card {
@@ -245,6 +249,7 @@ height: auto;
   background-color: #27558B;
   color: rgb(235, 235, 235);
   margin-top: 10vh;
+  font-family:'Roboto Flex', sans-serif;
   
 }
 
@@ -252,7 +257,7 @@ height: auto;
 /* EMPIEZA TURISMO AVENTURA */
 
 .portada__turismoAventura {
-  background-image: radial-gradient(#0000004d, #0000002b), url(../media/nuevas3.jpg);
+  background-image: url(../media/nuevas3oscura1-min.jpg);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -289,7 +294,8 @@ height: auto;
     font-size:calc(50px + 2vw); 
     color:rgb(255, 255, 255);
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;  
+    font-weight: 300;
+    text-shadow: 1px 1px 7px black;  
     white-space: pre;
     line-height: 70px;
   }
@@ -301,7 +307,7 @@ height: auto;
 /* EMPIEZA TREKKING */
 
 .portada__trekking {
-  background-image: radial-gradient(#0000004d, #0000002b), url(../media/nuevas111.jpg);
+  background-image: url(../media/nuevas111oscura1-min.jpg);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -336,7 +342,8 @@ height: auto;
     font-size:calc(50px + 2vw); 
     color:rgb(255, 255, 255);
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 500; 
+    font-weight: 300; 
+    text-shadow: 1px 1px 7px black;
    }
 
   .contenedor__trekking {
@@ -358,6 +365,8 @@ background-color:#11253C;
 
 .titulo__contacto h1{
   font-size: 11vh;
+  font-family: 'Fredoka', sans-serif;
+
   }
 
 .contenedor__grid--contacto {  
@@ -496,7 +505,7 @@ justify-self: center;
 align-self: center;
 color: white;
 border-color: black;
-font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Flex', sans-serif;
 }
 
 .grid-item:nth-child(2) h2{
