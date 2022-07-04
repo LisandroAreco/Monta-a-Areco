@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import 'colores';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+    background-color: $rojo-boton;
+    color: white;
+    border: none;
+    margin-top: 4px;
+}
+
+html {
+  font-size: 62,5%;
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.navbar {
+    background-color: $azul-negro;
+    box-shadow: 0px 0px 3px black;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 2,5vh;
+    padding: 1px 0px;
+}
+
+.subtitulo__paginas {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    font-size: 45px;
+    font-size: 8vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    margin-bottom: 3vh;
+    padding-top: 20vh;
+    font-size:calc(25px + 2vw); 
+    color: white;
+    text-align: center;
+    span { 
+        border-bottom: 1px solid;  
+        padding-bottom: 1px;
+    }
+}
+.contenedor_hr {
+    padding-bottom: 10vh ;  
+   .hr__subtitulo {
+    height: 3px;
+    background-color: $rojo-brillante;
+    opacity: 1;
+    width: 35px;
+    margin: auto;
+    }
+}  
+
+.card {
+    box-shadow: 0px 0px 5px $violeta-sombra;
+}
+  
+.card-img-bottom {
+    border-radius: 1%;
+}
+
+.cards__paginas {
+    background-color: $celeste-oscuro ;
+    padding: 5vh 5vh 15vh 5vh;        
+    .card__color1 {
+        box-shadow: 1px 5px 20px 1px #1c223f;
+        background: linear-gradient($azul-oscuro-degrade1, $azul-oscuro-degrade2 95%);
+    }
+    .card_css {
+        color: white;
+        margin-top: 10vh;
+        font-family:'Roboto Flex', sans-serif;            
+    }
+}
+/* wasap fixed */
+.wasap__fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    z-index: 99;
+    a {
+        opacity: .8;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 1;
+        }
+        .img__wasap {
+            transition: all .7s;
+            width: 70px;
+            &:hover {
+                transform: scale(1.1) rotate(360deg);
+            }
+        } 
+    }
+}
+
+/* Index */
+
+.body__index {
+    .contenedor__carousel {
+        .header__titulo {
+            position: absolute;
+            color:white;
+            top: 26vh;
+            height: auto ;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: lighter;
+            z-index: 2;            
+            .titulo__index {
+                font-size:calc(50px + 2vw); 
+                color:rgb(255, 255, 255);
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 500; 
+                text-align: center;
+                text-shadow: 1px 1px 7px black;
+                border-radius: 10px;
+                padding: 0px 5px;
+                font-size: 80px;                                
+            }
+        }
+        .contenedor__flechita {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            top: 50vh;
+            justify-content: center;
+            z-index: 2;
+            display: flex;
+            .flechita {
+                transition: transform .2s;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }    
+    }
+    #nosotros {
+        background-color: $celeste-oscuro;
+        box-shadow: 0px 0px 8px  #00000088;
+        padding: 20vh 0px;
+        .nosotros__contenedor {
+            display: flex;
+            justify-content: center;
+            .nosotros__titulo {
+                font-size: 50px;
+                font-family: 'Roboto Condensed', sans-serif;
+                color: white;
+                font-weight: 300;
+            }
+        }    
+        .nosotros__parrafo {
+            text-align: center;
+            margin: 35px 200px 20px 200px;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 23px;
+            font-weight: 100;
+            line-height: 27px;
+            color: white;
+            text-shadow: 0 0 1px rgba(5, 5, 5, 0.548);            
+        }             
+    }
+    .contenedor__cards  {
+        background-color:#0A1827;
+        padding-bottom: 40vh;
+        .hr__subtitulo {
+            height: 3px;
+            background-color: $rojo-brillante;
+            opacity: 1;
+            width: 35px;
+            margin: auto;
+            margin-top: 5vw;
+        }
+        .cards__index {
+            padding-top: 20vh;
+            .row {
+                .card__zoom {
+                    transition: all 0.3s;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+                .col-9 {
+                    .card {
+                        .card-body {
+                            p {
+                                font-family: 'Roboto Flex', sans-serif;
+                            }
+                            ul {
+                                li {
+                                    font-family: 'Roboto Flex', sans-serif;                                        
+                                    font-style: italic;
+                                }      
+                            }
+                            h4 {
+                                font-family: 'Roboto Condensed', sans-serif;
+                                text-shadow: 0px 1px 25px black;
+                            }
+                        }
+                        .card-color {
+                            background: linear-gradient(180deg,#28578de2, #27568be8);
+                            color: white;
+                        }                                
+                    }
+                }
+            }
+        }                
+    }
+}
+
+/* Ascensos */
+.main__ascensos {
+    .portada__ascensos {
+        background-image: url(../media/nuevas2oscuro1-min.jpg) ;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        padding: 0px;
+        box-shadow: 0 0 10px #00000088; 
+        .titulo__ascensos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20vh;
+            height: auto;
+            h1 {
+                font-size:calc(50px + 2vw); 
+                color:rgb(255, 255, 255);
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 300; 
+                text-shadow: 1px 1px 7px black;
+            }
+            .linea__titulo--ascensos {
+                height:14vw;
+                min-height: 150px;
+                width:.3vw;
+                border-width:0;
+                color:rgb(255, 255, 255);
+                background-color:$rojo-brillante;
+                opacity: 1;
+                transform: skewX(341deg);
+                margin-right: 1vh;
+            } 
+        }       
+    }
+    .contenedor__ascensos {
+        background-color: #0A1827;
+        p{
+            text-align: center;
+            margin: 0px 200px 80px 200px;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 23px;
+            font-weight: 100;
+            line-height: 27px;
+            color: white;
+        }                  
+        .subtitulo__paginas {
+            display: flex;
+            justify-content: center;
+            height: auto;
+            font-size: 45px;
+            font-size: 8vh;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 500;
+            margin-bottom: 8vh;
+            padding-top: 8vw;
+            font-size:calc(25px + 2vw); 
+            color: white;
+            text-align: center;
+        }
+    }
+} 
+
+
+/* Turismo Aventura */
+body {
+    main {
+        .portada__turismoAventura {
+            background-image: url(../media/nuevas3oscura1-min.jpg);
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            padding: 0px;
+            box-shadow: 0 0 10px #00000088;
+            .titulo__turismoAventura {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20vh;
+                height: auto;
+                h1 {
+                    font-size:calc(50px + 2vw); 
+                    color:rgb(255, 255, 255);
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-weight: 300;
+                    text-shadow: 1px 1px 7px black;  
+                    white-space: pre;
+                    line-height: 70px;
+                }
+                .linea__titulo--turismoAventura {
+                    height:14vw;
+                    min-height: 150px;
+                    width:.3vw;
+                    border-width:0;
+                    color:rgb(255, 255, 255);
+                    background-color: $rojo-brillante;
+                    opacity: 1;
+                    transform: skewX(341deg);
+                    margin-right: 40px;
+                }                                
+            }            
+        }
+        .contenedor__turismoAventura {
+            background-color: $celeste-claro;
+            p {
+                text-align: center;
+                margin: 0px 200px 80px 200px;
+                font-family: 'Roboto Flex', sans-serif;
+                font-size: 23px;
+                font-weight: 100;
+                line-height: 27px;
+                color: white;
+            }            
+        }    
+    }
+}
+/* Trekking */
+body {
+    main {
+        .portada__trekking {
+            background-image: url(../media/nuevas111oscura1-min.jpg);
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            padding: 0px;
+            box-shadow: 0 0 10px #00000088;
+            .titulo__trekking {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20vh;
+                height: auto;
+                .linea__titulo--trekking {
+                    height:14vw;
+                    min-height: 150px;
+                    width:.3vw;
+                    border-width:0;
+                    color:rgb(255, 255, 255);
+                    background-color:$rojo-brillante;
+                    opacity: 1;
+                    transform: skewX(341deg);
+                    margin-right: 3vh;
+                }
+                h1 {
+                    font-size:calc(50px + 2vw); 
+                    color:rgb(255, 255, 255);
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-weight: 300; 
+                    text-shadow: 1px 1px 7px black;
+                } 
+            }        
+        }
+        .contenedor__trekking {
+            background-color: #0A1827;
+            p{
+                text-align: center;
+                margin: 0px 200px 80px 200px;
+                font-family: 'Roboto Flex', sans-serif;
+                font-size: 23px;
+                font-weight: 100;
+                line-height: 27px;
+                color: white;
+            }        
+        }
+    }
+}
+/* Contacto */
+.body__contacto {
+    background-color: #0A1827;
+    header {
+        .navbar {
+            background-color: #11253C;
+            box-shadow: 0px 0px 3px black;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 2,5vh;
+            padding: 1px 0px;
+        }
+    }
+    .portada__contacto {
+        color:rgb(235, 235, 235);
+        display: flex;
+        justify-content: center;
+        background-color:#11253C; 
+        .titulo__ascensos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20vh;
+            height: auto;
+            h1 {
+                font-size:calc(50px + 2vw); 
+                color:rgb(255, 255, 255);
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 500;   
+            }
+            .linea__titulo--trekking {
+                height:14vw;
+                min-height: 150px;
+                width:.3vw;
+                border-width:0;
+                color:rgb(255, 255, 255);
+                background-color:$rojo-brillante;
+                opacity: 1;
+                transform: skewX(341deg);
+                margin-right: 3vh;
+            }     
+        }
+    } 
+    .main__contacto {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        .contenedor__grid--contacto {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-row-gap: 80px;
+            grid-template-areas:
+            "telefono whatsapp formulario"
+            "email instagram formulario";
+            margin: 130px 0px 130px 0px;
+            .formulario {
+                display: flex;
+                grid-auto-flow: column;
+                grid-area: formulario;
+                align-items:center;
+                justify-content: start;
+                .TextAreas {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    align-items: flex-start;
+                    gap: 10px; 
+                    .formulario-contacto-nombre {
+                        width: 350px;
+                        border:2px solid #aaa;
+                        border-radius:4px;
+                        margin:1px;
+                        outline:none;
+                        padding:8px;
+                        box-sizing:border-box;
+                        transition:.3s; 
+                        &:focus{
+                            border-color: $celeste-claro;
+                            box-shadow:0 0 7px 0 $celeste-claro;
+                          }
+                    }  
+                    .formulario-contacto-email{
+                        width: 350px;
+                        border:2px solid #aaa;
+                        border-radius:4px;
+                        outline:none;
+                        padding:8px;
+                        box-sizing:border-box;
+                        transition:.3s;
+                        &:focus{
+                            border-color: $celeste-claro;
+                            box-shadow:0 0 7px 0 $celeste-claro;
+                          }
+                    } 
+                    .formulario-contacto-mensaje {
+                        width: 350px;
+                        height: 300px;
+                        border:2px solid #aaa;
+                        border-radius: 4px;
+                        margin: 1px;
+                        outline:none;
+                        padding:8px;
+                        box-sizing:border-box;
+                        transition:.3s;
+                        &:focus{
+                            border-color: $celeste-claro;
+                            box-shadow:0 0 7px 0 $celeste-claro;
+                        }
+                    }
+                    .botones {
+                        width: 25%;
+                        border-radius: 4px;
+                        margin-left: 6px;
+                        transition: all .3s;
+                        cursor: pointer;
+                        input {
+                            width: 100%;   
+                        }
+                        &:hover {
+                            border-color: $celeste-claro;
+                            box-shadow:0 0 11px 0 $celeste-claro;                        
+                        }
+                    }
+                }
+            }
+            .telefono {
+                grid-area: telefono;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;  
+                h2 {
+                    font-size: 25px;
+                } 
+                p {
+                    font-size: 15px;
+                } 
+            }
+            .whatsapp {
+                grid-area: whatsapp;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                color: white;
+                img {
+                    padding-left: 1vw;
+                }
+                h2  {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 15px;
+                }                          
+            }
+            .email { 
+                grid-area: email;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                h2 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 15px;
+                }       
+            }
+            .instagram { 
+                grid-area: instagram;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                color: white;
+                text-align: center;
+                img {
+                    padding-left: 1vw;
+                }
+                h2  {
+                    font-size: 25px;
+                    margin-left: .1vw;
+
+                }
+                p {
+                    font-size: 15px;
+                    margin-left: .5vw;
+                } 
+            }  
+        } 
+    }
+}
+/* Footer */
+.footer__container {
+    background-color: #2a2a72;
+    background-image: linear-gradient(300deg, $azul-claro 82%, $celeste-claro 25%);
+    height: 92px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.6fr 1.2fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    .grid-item:nth-child(1) {
+        justify-self: start;
+        align-self: center;
+        margin-left: 20px;
+        .logo__tel {
+            transition: all .5s;
+            &:hover {
+                transform: rotate(35deg);    
+            } 
+        }
+        .logo__whatsapp {
+            height: 28px;
+            width: 28px;
+            transition: all .5s;
+            &:hover {
+                transform: rotate(35deg);    
+            } 
+        }
+        .logo__instagram {
+            height: 26px;
+            width: 26px;
+            margin-right: 4px;
+            margin-left: 2px;
+            transition: all .5s;
+            &:hover {
+                transform: rotate(35deg);
+            }
+        }
+        .logo__mail {
+            transition: all .5s;
+            &:hover {
+                transform: rotate(35deg);    
+            } 
+        }
+    }
+    .grid-item:nth-child(2) {
+        justify-self: center;
+        align-self: center;
+        color: white;
+        border-color: black;
+        font-family: 'Roboto Condensed', sans-serif;
+        h2{
+            text-align: center;
+            font-size: 25px;
+            margin: 0px;
+        }
+    }
+    .grid-item:nth-child(3) {
+        justify-self: center;
+        align-self: center;
+        margin-left: 50px;
+        .logo__parques {
+            background-image: white;
+            height: 75px;
+            width: 75px;
+            filter:brightness(90%);
+        }
+        .logo__lanin {
+            height: 75px;
+            width: 95px;
+            filter:brightness(95%);
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}
+/* Media querys */
+
+@media (max-width: 768px) {
+    .wasap__fixed {
+        a {
+            .img__wasap {
+            transition: all .7s;
+            width: 65px;
+            }
+        }    
+    }
+    .hr__subtitulo {
+        height: 2px;    
+    }
+    /* index */
+    .body__index {
+        .contenedor__carousel {
+            .contenedor__flechita {
+                top: 63vh;                
+            }
+        }
+        #nosotros {
+            .nosotros__parrafo {
+                text-align: center;
+                margin: 8px 80px 8px 80px;
+                font-family: 'Roboto Flex', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 25px;
+                color: white;
+                text-shadow: 0 0 1px rgba(5, 5, 5, 0.548);                
+            }
+        }
+    }
+    /* Ascensos */ 
+    .main__ascensos{
+        .contenedor__ascensos p{
+        text-align: center;
+        margin: 0px 80px 25px 80px;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 27px;
+        color: white;
+        }    
+    }
+    /* Turismo Aventura */
+    body {
+        main {
+            .contenedor__turismoAventura {
+                p {
+                    text-align: center;
+                    margin: 0px 80px 25px 80px;
+                    font-family: 'Roboto Flex', sans-serif;
+                    font-size: 18px;
+                    font-weight: 100;
+                    line-height: 27px;
+                    color: white;
+                }
+            }
+        }
+    }
+    /* Trekking */
+    body {
+        main {
+            .contenedor__trekking {
+                p{
+                    text-align: center;
+                    margin: 0px 80px 25px 80px;
+                    font-family: 'Roboto Flex', sans-serif;
+                    font-size: 18px;
+                    font-weight: 100;
+                    line-height: 27px;
+                    color: white;
+                }            
+            }
+        }
+    }
+    /* contacto */ 
+    .body__contacto {
+        background-color: #0A1827;
+        .wasap__fixed {
+            a {
+                .img__wasap {
+                    transition: all .7s;
+                    width: 65px;
+                }
+            }
+        }
+        .main__contacto {
+            .contenedor__grid--contacto {
+                display: flex;
+                flex-direction: column-reverse;
+                .formulario {  
+                    justify-content: center;
+                    }
+                .whatsapp {
+                    grid-area: whatsapp;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .instagram {
+                    grid-area: instagram;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }      
+    }
+    /* Footer */
+    .footer__container {
+        background-image: linear-gradient(180deg, $azul-claro 57%, $celeste-claro 43%);
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 60px 77px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+         align-content: center; 
+        .grid-item:nth-child(1) {
+            justify-self: center;
+            align-self: center;
+            .logo__tel {
+                margin: 10px 15px;
+            }
+            .logo__whatsapp {
+                margin: 10px 15px;
+            }
+            .logo__instagram {
+                margin: 10px 15px;
+            }
+            .logo__mail {
+                margin: 10px 15px;
+            }
+        }
+        .grid-item:nth-child(2) {
+            h2{
+                font-size: 20px;
+            }
+        }
+        .grid-item:nth-child(3) {
+            justify-self: center;
+            align-self: center;                
+            .logo__parques {
+                background-image: white;
+                height: 75px;
+                width: 75px;
+                filter:brightness(90%);
+            }
+            .logo__lanin {
+                height: 75px;
+                width: 95px;
+                filter:brightness(95%);
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }    
+}   
+
+@media (max-width: 400px) {
+    .body__index {
+        #nosotros {
+            .nosotros__parrafo {
+                text-align: center;
+                margin: 8px 3px 8px 3px;
+                font-family: 'Roboto Flex', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 25px;
+                color: white;
+                text-shadow: 0 0 1px rgba(5, 5, 5, 0.548);
+            }        
+        } 
+    }
+}
