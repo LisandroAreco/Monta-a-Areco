@@ -13,7 +13,7 @@ class Servicio {
     setId (nuevo_id){
         this.id = nuevo_id
     }
-    precio() {
+    precios() {
         return (this.precio)
     } 
 }
@@ -25,9 +25,23 @@ lista.push(new Servicio("Bariloche 7 Lagos ", "Trekking", 50000, 9))
 lista.push(new Servicio("Mendoza Iracu", "Turismo Aventura", 40000, 5))
 
 
-//No entiendo por que me devuelve -1 y false respectivamente.
-console.log(lista.indexOf('Trekking'))
-console.log(lista.includes("Trekking"))
+//EJERCICIO DOM
+let divDestinos = document.createElement("div")
+let padreDestinos = document.querySelector("#nosotros")
+let destinosLista = document.createElement("ul")
+
+padreDestinos.appendChild(divDestinos)
+divDestinos.appendChild(destinosLista)
+
+let destinos = ["Bariloche", "Mendoza", "Neuquén"]
+destinos.push("Santiago del estero")
+
+for (const item of destinos) {
+    let li = document.createElement("li")
+    li.innerHTML = item
+    destinosLista.appendChild(li)
+}
+
 
 //Elije el servicio que quiere
 let pregunta = parseInt(prompt("¿Qué pack te interesa?" + "\n" +  detalleServicios()))
