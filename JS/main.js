@@ -1,14 +1,15 @@
 //Clase estructura para servicios de la web
 class Servicio {
-    constructor(ubicacion, disciplina, precio, stock,){
-        this.ubicacion = ubicacion;
-        this.disciplina = disciplina;
+    constructor(titulo, descripcion, precio, foto, stock, id){
+        this.titulo = titulo;
+        this.descripcion = descripcion;
         this.precio = precio;
+        this.foto = foto;
         this.stock = stock;
-        this.id = -1
+        this.id = id
     }
     mostrarTodo() {
-        return (this.ubicacion + " " + this.disciplina + " " + "$" + this.precio + ". Quedan " + this.stock + " lugares");
+        return (this.titulo + " " + this.descripcion + " " + "$" + this.precio + ". Quedan " + this.stock + " lugares");
     }  
     setId (nuevo_id){
         this.id = nuevo_id
@@ -20,31 +21,61 @@ class Servicio {
 
 //Array para pushear los servicios
 let lista = []
-lista.push(new Servicio("Bariloche Cerro Catedral", "Trekking", 30000, 7))
-lista.push(new Servicio("Bariloche 7 Lagos ", "Trekking", 50000, 9))
-lista.push(new Servicio("Mendoza Iracu", "Turismo Aventura", 40000, 5))
+lista.push(new Servicio("Zapatillas", "Te llevamos el calzado mas indicado para tu aventura ",  30000,"../media/zapas.jpg", 7,1))
+lista.push(new Servicio("Comida", "Preparamos la comida ideal para tu travesía", 50000, "../media/zapas.jpg", 9, 2))
+lista.push(new Servicio("Abrigo", "El mejor abrigo para que disfrutes al máximo",  40000, "../media/zapas.jpg", 5, 3))
 
 
-//EJERCICIO DOM
-let divDestinos = document.createElement("div")
-let padreDestinos = document.querySelector("#nosotros")
-let destinosLista = document.createElement("ul")
+//DOM
+const divGallery = document.querySelector("#listaCards");
+const template = document.getElementById("template-div").content
+const fragment = document.createDocumentFragment()
 
-padreDestinos.appendChild(divDestinos)
-divDestinos.appendChild(destinosLista)
+lista.forEach(producto => {
+    template.querySelector(".titulo__card").textContent = producto.titulo
+    template.querySelector(".descripcion__card").textContent = producto.descripcion
+    template.querySelector(".precio__card").textContent =  "$" + producto.precio
+    const clone = template.cloneNode(true)
+    fragment.appendChild(clone)
+})
 
-let destinos = ["Bariloche", "Mendoza", "Neuquén"]
-destinos.push("Santiago del estero")
+divGallery.appendChild(fragment)
 
-for (const item of destinos) {
-    let li = document.createElement("li")
-    li.innerHTML = item
-    destinosLista.appendChild(li)
-}
+
+
+
+//storage y JSON
+
+const bienvenida = document.getElementById("bienvenida")
+
+const usuario = prompt("Cual es tu nombre?")
+//guardo en localstorage
+let usuarioJSON = JSON.stringify(usuario)   
+localStorage.setItem("nombre", usuarioJSON)
+document.querySelector("#bienvenida").textContent = "Bienvenido " + usuario + "!"
+
+//Uso el localstorage
+let nombreStorage = JSON.parse(localStorage.getItem("nombre"))
+alert("tu nombre es: " + nombreStorage + "!!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Elije el servicio que quiere
-let pregunta = parseInt(prompt("¿Qué pack te interesa?" + "\n" +  detalleServicios()))
+/* let pregunta = parseInt(prompt("¿Qué pack te interesa?" + "\n" +  detalleServicios()))
 
 if (pregunta == 1) {   
 
@@ -85,13 +116,7 @@ if (pregunta == 1) {
 }else {
     alert("Ingresa un numero válido")
     pregunta = parseInt(prompt("¿Qué pack te interesa?" + "\n" +  detalleServicios()))
-}
-
-
-
-//Sintaxis para cambiar valores especificos de los Arrays
-lista[0].precio = 70000
-
+} */
 
 
 
@@ -100,16 +125,16 @@ lista[0].precio = 70000
 
 
 //Funcion para mostrar todos los detalles 
-function detalleServicios () {
+/* function detalleServicios () {
     let mensaje = ""
     for(let i =0 ; i < lista.length ; i++) {
         mensaje += [i + 1] + ". " + lista[i].mostrarTodo() + "\n";  
     }
     return mensaje;     
-}
+} */
 
 //Funcion para calcular cuotas
-function cuotas (precio, cuotas) {
+/* function cuotas (precio, cuotas) {
     while (cuotas !=1 && cuotas != 6 && cuotas !=12){
     cuotas = prompt("ingrese el número de cuotas que desea: 1, 6 o 12")
     }
@@ -130,4 +155,4 @@ function cuotas (precio, cuotas) {
         let mensaje = "El costo por cuota en 12 cuotas, es de $ " + precio
         return mensaje
     } 
-}
+} */

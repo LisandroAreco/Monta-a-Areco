@@ -1095,95 +1095,84 @@ body main .contenedor__trekking p {
 /*# sourceMappingURL=styles.css.map */
 
 
-/* js entregable */
-.square {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin: 0 20px 20px 0;
-  text-align: center;
-  line-height: 150px;
-  color: #000000;
-  user-select: none;
-
-}
-
-.cantidad__personas {
+/* Entregable JS */
+#listaCards {
   display: flex;
-  justify-content: center;
-  font-size: 50px;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: white;
-  font-weight: 300;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
-.botones__personas {
+#gallery{
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
-  gap: 50px;
-  margin-bottom: 100px;
-}
-.color {
-  background-color: #5a5ada;
-}
-
-#boxCtn {
-  margin: 20px 0;
-}
-
-.sublist {
-  display: none;
-  margin: 10px;
-  text-align: left;
-  list-style: disc;
-}
-.list2 {
-  padding: 0;
-  width: 200px;
-  border: 1px solid #000;
-}
-.item2 {
-  list-style: none;
-  text-decoration: none;
+  align-items: center;
+  margin: 50px 0;
+  }
+  .content{
+  width: 24%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
   text-align: center;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #000;
-}
-
-
-.propSquare{
-  line-height: 40px;
-}
-.bigBox {
-  width: 400px;
-  padding: 20px;
-  background-color: #5a5ada;
-}
-.par{
-  background-color: #000;
-}
-
-.list {
-  padding: 0;
+  border-radius:10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: .4s;
+  }
+  .content:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  transform: translate(0px, -8px);
+  transition: .6s;
+  }
+  .img__card{
   width: 200px;
-  border: 1px solid #000;
-}
-
-.list li {
-  display: inline-block;
+  height: 200px;
   text-align: center;
+  margin: 0 auto;
+  display: block;
+  }
+  .titulo__card{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+  }
+  .descripcion__card{
+  text-align: center;
+  color: #b2bec3;
+  padding: 0 8px;
+  }
+  .precio__card{
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+  }
+  .button__card{
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
   width: 100%;
-  list-style: none;
-  padding: 10px;
-  border: 2px solid #000;
-}
+  padding: 15px;
+  border:0px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #2183a2;
 
-.passRecomendation {
-  width: 300px;
-  font-size: 12px;
-  color: #ff4f4f;
-}
+  }
+
+  @media(max-width: 1000px){
+  .content{
+  width: 46%;
+  }
+  }
+  @media(max-width: 750px){
+  .content{
+  width: 100%;
+  }
+  }

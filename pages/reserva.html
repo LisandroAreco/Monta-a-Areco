@@ -54,22 +54,30 @@
       <img src="../media/logo-whatsapp.png" class="img__wasap">
     </a>
   </div> 
-   <!-- Portada contacto -->                    
+   <!-- Portada reserva -->                    
   <div class="portada__contacto">
     <div class="titulo__ascensos">
       <hr class="linea__titulo--trekking">  
       <h1>Completá los detalles y <br> reservá tu lugar</h1>
     </div>
   </div>
-  <!-- Main contacto -->
-  <main class="main__contacto">}
-    <h2 class="cantidad__personas">Ingresá la cantidad de personas que participarán</h2>
-    <div class="botones__personas">
-        <input type="button" value="Agregar persona" id="createBoxBtn">
-        <input type="button" value="Confirmar la cantidad de personas" id="stopBoxesBtn">
-        <input type="button" value="Borrar las personas" id="deleteBoxesBtn">
+  <!-- Main reserva -->
+  <main class="main__contacto">
+    <h2 class="reserva__seleccion">Seleccioná todo lo necesario para que tu experiencia sea perfecta! </h2>
+    <h3 id="bienvenida"></h3>
+    <div id="listaCards">
     </div>
-    <div id="boxCtn"></div>
+    <template id="template-div">
+      <div id="gallery">
+        <div class="content">
+          <img class="img__card" src="../media/zapas.jpg">
+          <h3 class="titulo__card">Zapatillas</h3>
+          <p class="descripcion__card">Te llevamos el calzado mas indicado para tu aventura</p>
+          <h6 class="precio__card">$10000</h6>
+          <button class="button__card">Agregar al carrito</button>
+        </div>
+      </div>       
+    </template>
   </main>
   <!-- Footer  -->        
   <footer>
@@ -98,7 +106,7 @@
   </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <script src="../JS/entregable.js"></script>
+    <script src="../JS/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
