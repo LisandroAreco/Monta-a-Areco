@@ -1,3 +1,13 @@
+let edad = prompt("cuantos años tenes?");
+
+edad > 18 ? Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Podes ingresar a la pagina',
+    showConfirmButton: false,
+    timer: 1500
+  }) : alert("no podes pasar");
+  
 //Clase estructura para servicios de la web
 class Servicio {
     constructor(titulo, descripcion, precio, foto, stock, id){

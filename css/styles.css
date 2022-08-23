@@ -1096,6 +1096,12 @@ body main .contenedor__trekking p {
 
 
 /* Entregable JS */
+.reserva__seleccion, #bienvenida {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
 #listaCards {
   display: flex;
   flex-wrap: wrap;
@@ -1120,6 +1126,8 @@ body main .contenedor__trekking p {
   padding-top: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: .4s;
+  color: #383ec3;
+  background-color: #ffffff;
   }
   .content:hover{
   box-shadow: 0 0 11px rgba(33,33,33,.2);
