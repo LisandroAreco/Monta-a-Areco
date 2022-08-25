@@ -5,9 +5,14 @@ edad > 18 ? Swal.fire({
     icon: 'success',
     title: 'Podes ingresar a la pagina',
     showConfirmButton: false,
-    timer: 1500
-  }) : alert("no podes pasar");
-  
+    timer: 3000
+  }) : Swal.fire({
+    icon: 'error',
+    title: 'Salí de aca!',
+    text: 'Todavía no podés hacer estas travesías',
+    footer: '<a href="">Why do I have this issue?</a>'
+  })
+
 //Clase estructura para servicios de la web
 class Servicio {
     constructor(titulo, descripcion, precio, foto, stock, id){
