@@ -1,3 +1,27 @@
+//sintaxis de Fetch.
+
+
+class GestionarProductos {
+
+    iniciar() {
+        /* metodo para iniciar */
+        fetch( link )
+
+        .then( respuesta => respuesta.json())
+        .then( resultado => {
+
+            productos     = resultado.productos;
+       
+    })
+    }
+}
+
+
+
+
+
+
+
 let edad = prompt("cuantos años tenes?");
 
 edad > 18 ? Swal.fire({
